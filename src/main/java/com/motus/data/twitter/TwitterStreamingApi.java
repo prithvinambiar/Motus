@@ -1,6 +1,7 @@
-package com.motus.data;
+package com.motus.data.twitter;
 
 import com.google.common.collect.Lists;
+import com.motus.data.DataExtractor;
 import com.twitter.hbc.ClientBuilder;
 import com.twitter.hbc.core.Client;
 import com.twitter.hbc.core.Constants;
@@ -14,7 +15,7 @@ import java.util.List;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-class TwitterDataExtractor implements DataExtractor {
+class TwitterStreamingApi implements DataExtractor {
     public List<String> GetData() {
         StatusesFilterEndpoint hosebirdEndpoint = new StatusesFilterEndpoint();
         List<String> terms = Lists.newArrayList("prithvi");
