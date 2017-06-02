@@ -15,7 +15,7 @@ class TwitterSearchApi implements TwitterApi{
     }
 
     @Override
-    public List<String> GetTweets(String searchString) {
+    public List<String> GetData(String searchString) {
         Query query = new Query();
         query.setQuery(searchString);
         query.resultType(Query.ResultType.recent);

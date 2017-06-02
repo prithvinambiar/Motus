@@ -2,10 +2,7 @@ package com.motus.data.twitter;
 
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
-import org.mockito.Captor;
 import twitter4j.*;
-
-import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.any;
@@ -23,7 +20,7 @@ public class TwitterSearchApiTest {
         when(twitter.search(any(Query.class))).thenReturn(queryResult);
 
         TwitterApi twitterApi = new TwitterSearchApi(twitter);
-        twitterApi.GetTweets("linux");
+        twitterApi.GetData("linux");
 
         ArgumentCaptor<Query> queryArgumentCaptor = ArgumentCaptor.forClass(Query.class);
 
