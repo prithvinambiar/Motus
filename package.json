@@ -1,0 +1,18 @@
+{
+  "name": "Motus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:prithvinambiar/Motus.git",
+  "author": "Prithvi Nambiar <prithvinambiar@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.2",
+    "webpack": "^2.6.1"
+  },
+  "scripts": {
+    "bundle": "webpack --config webpack.config.js",
+    "prestart": "npm run bundle"
+  },
+  "engines" : { "node" : "=4.4.5" }
+}
